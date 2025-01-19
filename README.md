@@ -14,3 +14,6 @@
 
 ## 4. Variables
 - 01-clase/01_basic/04_variables.py
+
+## 5. Input
+- 01-clase/01_basic/05_input.py
