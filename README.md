@@ -17,3 +17,6 @@
 
 ## 5. Input
 - 01-clase/01_basic/05_input.py
+
+## Ejercicios clase 1
+- 01-clase/01_basic/exercises.py
