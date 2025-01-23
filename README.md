@@ -1,22 +1,47 @@
 # Temario
 
-## 0. Comentarios
+## Clase 1
+
+### 0. Comentarios
 - 01-clase/01_basic/02_comments.py
 
-## 1. Hola mundo
+### 1. Hola mundo
 - 01-clase/01_basic/01_print.py
 
-## 2. Tipos de datos
+### 2. Tipos de datos
 - 01-clase/01_basic/02_types.py
 
-## 3. Cast (transformacion de tipos)
+### 3. Cast (transformacion de tipos)
 - 01-clase/01_basic/03_cast.py
 
-## 4. Variables
+### 4. Variables
 - 01-clase/01_basic/04_variables.py
 
-## 5. Input
+### 5. Input
 - 01-clase/01_basic/05_input.py
 
-## Ejercicios clase 1
+### Ejercicios clase 1
 - 01-clase/01_basic/exercises.py
+
+## Clase 2
+
+### 1. if
+- 02-clase/02_flow_control/01_if.py
+
+### 1. Ejercicios de if
+- 02-clase/02_flow_control/01_if_excercises.py
+
+### 2. Booleanos
+- 02-clase/02_flow_control/02_boolean.py
+
+### 3. Listas
+- 02-clase/02_flow_control/03_list.py
+
+### 3. Ejercicios de listas
+- 02-clase/02_flow_control/03_list_excercises.py
+
+### 4. Metodos de listas
+- 02-clase/02_flow_control/04_list_methods.py
+
+### 4. Ejercicios de metodos de listas
+- 02-clase/02_flow_control/04_list_methods_excercises.py
