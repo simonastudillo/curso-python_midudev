@@ -60,6 +60,8 @@
 ### 2. Ejercicios de bucle for
 - 03_loops/02_exercises.py
 
-## Clase 4
+### 3. range()
+- 03_loops/03_range.py
 
-### 1.
+### 3. Ejercicios de range()
+- 03_loops/03_exercises.py
