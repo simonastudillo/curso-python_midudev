@@ -21,10 +21,7 @@ def checkIsBalanced(text):
   text = text.upper()
   r_count = text.count("R")
   j_count = text.count("J")
-
-  if r_count == j_count:
-    return True
-  else:
-    return False
+  print(f"R: {r_count}, J: {j_count}")
+  return r_count == j_count
   
 print(checkIsBalanced(text))
