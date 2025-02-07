@@ -10,3 +10,16 @@ Escribe una función en Python que reciba una lista de números enteros y devuel
 # Para ver si un número es par
 # siempre usamos el módulo %
 # nos da el resto de la división: eggs % 2 == 2
+
+def count_eggs(eggs: list) -> int:
+  """
+  Esta función recibe una lista de numeros enteros que representan la cantidad de huevos que han puesto diferentes dinosaurios en el parque jurásico y los de número par son de carnívoros. Devuelve un número con la suma de todos los huevos de carnívoros.
+  """
+  total_par_eggs = 0
+  for egg in eggs:
+    if egg % 2 == 0:
+      total_par_eggs += egg
+
+  return total_par_eggs
+
+print(count_eggs([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
