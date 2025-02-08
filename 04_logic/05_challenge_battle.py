@@ -38,3 +38,30 @@ resultado = battle(lista_a, lista_b)  # -> "x"
 # Fuerza bruta: buscar la solución A SACO.
 # Algoritmos ocultos o cálculos o fórmulas
 # Programación dinámica: buscar una solución mas eficiente
+
+# lista_a = [2, 4, 2]
+# lista_b = [3, 3, 4]
+lista_a = [4, 4, 4]
+lista_b = [2, 8, 2]
+
+def battle(lista_a, lista_b):
+  if len(lista_a) != len(lista_b): return "x"
+  resultado = ""
+  for i in range(len(lista_a)):
+    diferencia = lista_a[i] - lista_b[i]
+    # print(f"{lista_a[i]} - {lista_b[i]} = {diferencia}")
+    if diferencia > 0:
+      resultado = str(abs(diferencia)) + "a"
+      if i+1 < len(lista_a):
+        lista_a[i+1] += abs(diferencia)
+    elif diferencia < 0:
+      resultado = str(abs(diferencia)) + "b"
+      if i+1 < len(lista_b):
+        lista_b[i+1] += abs(diferencia)
+    else:
+      resultado = "x"
+    # print(resultado)
+  return resultado
+
+
+print(battle(lista_a, lista_b))
