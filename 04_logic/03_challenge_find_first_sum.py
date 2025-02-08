@@ -23,9 +23,19 @@ def find_first(nums, goal):
         return [i, j]
   return None
 
+def find_with_dict(nums, goal):
+  seen = {} # guardar los índices ya visitados
+  for index, value in enumerate(nums):
+    missing = goal - value
+    if missing in seen:
+      return [seen[missing], index]
+    seen[index] = value
+  return None
+
 
 nums = [4, 5, 6, 3, 5, 4]
 goal = 8
 
 print(find_first_sum(nums, goal))
 print(find_first(nums, goal))
+print(find_with_dict(nums, goal))
