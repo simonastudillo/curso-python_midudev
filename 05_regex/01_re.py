@@ -87,3 +87,40 @@ for match in matches:
   cantidad += 1
 
 print(f"Encontradas {cantidad} coincidencias")
+
+
+### Modificadores
+
+# Los modificadores son opciones que se pueden agregar a un patrón para cambiar su comportamiento.
+
+# re.IGNORECASE: Ignora las mayúsculas y minúsculas
+text = "Todo el mundo dice que la IA nos va a quitar el trabajo. Pero la ia no es tan mala. ¡Viva la Ia!"
+
+pattern = "IA"
+
+found_ia = re.findall(pattern, text, re.IGNORECASE)
+
+if found_ia:
+  print(found_ia)
+else:
+  print("No se encontró la palabra IA")
+
+# Ejercicio 3
+# Encuentra todas las ocurrencias de la palabra "python" en el siguiente texto, sin distinguir entre myúsculas y mnúsculas.
+text = "Este es el curso de Python de midudev. ¡Suscríbete! a python si te gusta este contenido ! PYTHON"
+pattern = "python"
+
+matches = re.findall(pattern, text, re.IGNORECASE)
+
+print(matches)
+
+
+# Reemplazar el texto
+
+# re.sub() reemplaza todas las coincidencias de un patrón en un texto
+text = "Hola, mundo! hola de nuevo."
+pattern = "Hola"
+replacement = "Adiós!"
+
+new_text = re.sub(pattern, replacement, text)
+print(new_text)
